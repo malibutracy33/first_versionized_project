@@ -4,7 +4,7 @@
     padding: 0; /* resetting inner spacing */
 }
 .body{
-    background: #dcEADFB4;
+    background: #c8f5d2b4;
     height: 100vh;
     display: grid;
     grid-template-columns:repeat(12, 1fr) ;
