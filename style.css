@@ -1,0 +1,97 @@
+/* Universal Selector */
+* {
+    margin: 0; /* resetting outer spacing */
+    padding: 0; /* resetting inner spacing */
+}
+.body{
+    background: #dcEADFB4;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(12, 1fr) ;
+    grid-template-rows:repeat(12, 1fr) ;
+}
+
+.navbar {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    background-color: blueviolet;
+}
+
+.leftSidebar {
+    background-color: blanchedalmond;
+    grid-column: 1 / span 1 ;
+    grid-row: 2 / span 10;
+}
+
+.rightSidebar {
+    background-color:blanchedalmond;
+    grid-column: 12 / span 1 ;
+    grid-row: 2 / span 10 ;
+}
+
+.content {
+    background-color: lightblue;
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 10;
+}
+
+.footer {
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+    background-color: blueviolet;
+}
+
+/* ************************ */
+/* **Styling the Navbar ** */
+/* ************************ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: brown; /* changes the textual components color not <a> */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ************************ */
+/* **Styling the Footer ** */
+/* ************************ */
+
+.footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: brown;
+    font-size: 14px;
+}
+
+/* ************************ */
+/* **Styling the Content ** */
+/* ************************ */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.profile {
+    max-width: 600px;
+}
+
+.developerPhoto {
+    width: 100%;
+    max-width:200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Style for the contact form container */
